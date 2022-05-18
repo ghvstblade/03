@@ -131,3 +131,11 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ghvstblade/stuff/main
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ghvstblade/stuff/main/skeleton', true))()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ghvstblade/03/main/sile', true))()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ghvstblade/stuff/main/sumf', true))()
+
+local A_1 = "Slammed By "..game.Players.LocalPlayer.Name.." | 03x07Hook.cc"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+while true do
+    wait(2.5)
+    Event:FireServer(A_1, A_2)
+end
